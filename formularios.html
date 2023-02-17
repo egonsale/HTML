@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>FORMULARIOS</h1>
+    <form>
+        <input type="text" required maxlength="15" minlength="5" pattern="[A-Za-z ]+" />
+
+        <input type="number" required max="20" min="5" />
+
+        <input type="submit" value="enviar" />
+    </form>
+
+    <h2>FORMULARIOS</h2>
+
+    <!-- FORMULARIOS -->
+
+    <form>
+        <!-- LABEL: es la etiqueta que describe la informacion que se va poner -->
+        <!-- se pone el for para asociar y marcar el campo a la hora de escribir -->
+
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <div>
+                <label for="nombre">Nombre: </label>
+                <!-- CAMPO DE TEXTO -->
+                <input type="text" id="nombre" placeholder="Nombre..." />
+            </div>
+
+            <div>
+                <label for="descripcion">Descripción: </label>
+                <!-- CAMPO DE TEXTO PARA VARIAS LINEAS -->
+                <textarea id="descripcion"></textarea>
+            </div>
+
+            <div>
+                Email:
+                <input type="email" />
+
+            </div>
+
+            <div>
+                Contraseña:
+                <input type="password" />
+
+            </div>
+
+            <div>
+                Radio:
+                <input type="radio" name="genero" id="hombre" value="hombre" />
+                <label for="">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="mujer" />
+                <label for="">Mujer</label>
+
+            </div>
+
+            <div>
+                Select:
+                <select>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+            </div>
+
+            <div>
+                Checkbox:
+                <label>
+                    <input type:"checkbox" /> Mayor de Edad
+                </label>
+
+                <label>
+                    <input type:"checkbox" /> Menor de Edad
+                </label>
+
+            </div>
+
+            <div>
+                Color:
+                <input type="color" />
+
+            </div>
+
+            <div>
+                Fecha:
+                <input type="date" />
+
+            </div>
+
+            <div>
+                Ficheros:
+                <input type="file" />
+
+            </div>
+
+            <div>
+                Imagen:
+                <input type="image" src="IMAGENES/elli.jpg" width="50" />
+
+            </div>
+
+            <div>
+                Oculto:
+                <input type="hidden" name="oculto" value="superjnakdwl" />
+
+            </div>
+
+            <div>
+                Numero:
+                <input type="number" />
+
+            </div>
+
+            <div>
+                Rango:
+                <input type="range" name="rango" />
+
+            </div>
+
+            <div>
+                Busqueda:
+                <input type="search" name="buscar" />
+                <button>Buscar</button>
+
+            </div>
+
+            <div>
+                Telefono:
+                <input type="tel" name="telefono" />
+
+            </div>
+
+            <div>
+                Hora:
+                <input type="time" />
+
+            </div>
+
+            <div>
+                Mes:
+                <input type="month" />
+
+            </div>
+
+            <div>
+                Sitio Web:
+                <input type="url" />
+
+            </div>
+
+            <div>
+                Barra Progreso:
+                <progress max="100" value="45"></progress>
+
+            </div>
+
+            <div>
+                Meter:
+                <meter max="100" value="45"></meter>
+
+            </div>
+
+            <div>
+                Lista de Datos:
+                <input list="frutas" name="fruta" />
+                <datalist id="frutas">
+                    <option value="manzana" />
+                    <option value="naranja" />
+                    <option value="cereza" />
+                    <option value="sandia" />
+                    <option value="pera" />
+                </datalist>
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- PONER BOTON  -->
+
+        <!-- <button type="subit">Enviar</button> -->
+        <input type="submit" value="Enviar" />
+        <!-- LIMPIAR CAMPO -->
+        <input type="reset" value="Limpiar Formulario" />
+
+    </form>
+
+
+</body>
+
+</html>
